@@ -154,8 +154,8 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Suite&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; parallel=&quot;methods&quot; name=&quot;MyTest&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;methods&quot; name=&quot;MyTest&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;test.letcodeMainPageTest&quot;&gt;
         &lt;methods&gt;
@@ -204,18 +204,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'buttonspage')
+data.setCell(0, 1, 'inputspage')
 data.setCell(0, 2, 'test.letcodeMainPageTest')
-data.setCell(0, 3, 13279);
+data.setCell(0, 3, 33429);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'inputspage')
+data.setCell(1, 1, 'buttonspage')
 data.setCell(1, 2, 'test.letcodeMainPageTest')
-data.setCell(1, 3, 5495);
+data.setCell(1, 3, 13059);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 18 seconds</span>
+              <span class="suite-total-time">Total running time: 46 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -236,9 +236,9 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">test.letcodeMainPageTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">selectpage</span>
-                <br/>
                 <span class="ignored-method-name">alertPage</span>
+                <br/>
+                <span class="ignored-method-name">selectpage</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -257,23 +257,23 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">1 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">inputspage</span>
-                <span class="method-start">1625 ms</span>
+                <span class="method-start">1469 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">buttonspage</span>
-                <span class="method-start">1625 ms</span>
+                <span class="method-start">1469 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">7123 ms</span>
+                <span class="method-start">14531 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">14906 ms</span>
+                <span class="method-start">34899 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

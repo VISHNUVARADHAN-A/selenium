@@ -10,7 +10,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.AfterClass;
-public class test1 {
+public class test2 {
 	private static final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS");
 
 	private static void log(String message) {
@@ -37,15 +37,15 @@ public class test1 {
 		log("warp up");
 		driver.quit();
 	}
-@Test(priority=0)
+@Test(priority=1)
 void priorityRunner() {
-	log("start up0");
+	log("start up1");
 	driver.get("https://letcode.in/test");
 	System.out.println(driver.getTitle());
 }
-	@Test(priority=1)
+	@Test(priority=0)
 	void runner() {
-		log("start up1");
+		log("start up0");
 		driver.get("https://seleniumbase.io/demo_page");
 	}
 }
