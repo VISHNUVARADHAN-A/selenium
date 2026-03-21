@@ -2,11 +2,12 @@ package basePage;
 
 import java.time.Duration;
 
-import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 
 public class Basepage {
@@ -15,6 +16,7 @@ public class Basepage {
 
     @BeforeMethod
     public void setUp() {
+    	WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         driverThread.set(driver);
         

@@ -7,7 +7,7 @@
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="buttonspage"/>
+          <include name="frames"/>
         </methods>
       </class> <!-- test.letcodeMainPageTest -->
     </classes>

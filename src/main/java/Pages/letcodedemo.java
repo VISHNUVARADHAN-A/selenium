@@ -20,20 +20,21 @@ public class letcodedemo {
 	public void landingpage() throws InterruptedException {
 		
 		driver.get("https://letcode.in/test");
-		driver.manage().window().fullscreen();
+		driver.manage().window().maximize();
 		Thread.sleep(3000);
 	}
 	public void inputspage() {
+		driver.manage().window().maximize();
 	driver.findElement(By.xpath("//a[text()=' Edit ']")).click();
 	driver.findElement(By.xpath("//input[@placeholder='Enter first & last name']")).sendKeys("Bot 1999");
 	driver.findElement(By.xpath("//input[@value='I am good']")).sendKeys(" newly added");
-	System.out.println(driver.findElement(By.id("getMe")).getText());
+	System.out.println(driver.findElement(By.id("getMe")).getAttribute("value"));
 	driver.findElement(By.id("clearMe")).clear();
 	System.out.println(driver.findElement(By.id("noEdit")).isEnabled());
 	System.out.println(driver.findElement(By.id("dontwrite")).isEnabled());
 	}
 	public void buttonspage() throws InterruptedException {
-		Thread.sleep(4000);
+		driver.manage().window().maximize();
 		driver.findElement(By.xpath("//a[text()=' Click ']")).click();
 		driver.findElement(By.xpath("//button[text()='Goto Home']")).click();
 		driver.navigate().back();
@@ -48,6 +49,7 @@ public class letcodedemo {
 		
 	}
 	public void selectpage() {
+		driver.manage().window().maximize();
 		driver.findElement(By.xpath("//a[text()=' Drop-Down ']")).click();
 		WebElement selectdropdown = driver.findElement(By.id("fruits"));
 		Select sl = new Select(selectdropdown);
@@ -72,6 +74,7 @@ public class letcodedemo {
 	}
 	
 	public void alertpage() throws InterruptedException {
+		driver.manage().window().maximize();
 		JavascriptExecutor JSE = (JavascriptExecutor)driver;
 		JSE.executeScript("window.scrollBy(0,500)");
 		driver.findElement(By.xpath("//a[text()=' Dialog ']")).click();
@@ -87,9 +90,27 @@ public class letcodedemo {
 		driver.findElement(By.xpath("//button[text()='Confirm Alert']")).click();
 		driver.switchTo().alert().dismiss();
 		JSE.executeScript("window.scrollBy(0,500)");
-
 		driver.findElement(By.xpath("//button[text()='Modern Alert']")).click();
 		System.out.println(driver.findElement(By.xpath("//p[@class='title']")).getText());
 		driver.findElement(By.xpath("//button[@class='modal-close is-large']")).click();
+	}
+	
+	public void frames() throws InterruptedException {
+		driver.manage().window().maximize();
+		JavascriptExecutor JSE = (JavascriptExecutor)driver;
+		JSE.executeScript("window.scrollBy(0,500)");
+		WebElement framespage = driver.findElement(By.xpath("//a[text()=' Inner HTML ']"));
+		new Actions(driver)
+		        .scrollToElement(framespage)
+		        .perform();
+		framespage.click();
+		driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@id='firstFr']")));
+		driver.findElement(By.xpath("//input[@name='fname']")).sendKeys("hello");
+		driver.findElement(By.xpath("//input[@name='lname']")).sendKeys("hello1");
+		Thread.sleep(1000);
+		System.out.println(driver.findElement(By.xpath("//p[@class='title has-text-info']")).getText());
+		driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@src='innerframe']")));
+		driver.findElement(By.xpath("//input[@name='email']")).sendKeys("hello");
+		System.out.println(driver.findElement(By.xpath("//input[@name='email']")).getAttribute("value"));
 	}
 	}

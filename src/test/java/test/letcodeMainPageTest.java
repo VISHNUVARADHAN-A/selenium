@@ -32,4 +32,10 @@ public class letcodeMainPageTest extends Basepage {
 	        lc.landingpage();
 	    	lc.alertpage();
 	    }
+	    @Test
+	    void frames() throws InterruptedException{
+	        letcodedemo lc = new letcodedemo(getDriver());
+	        lc.landingpage();
+	    	lc.frames();
+	    }
 }

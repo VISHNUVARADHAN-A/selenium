@@ -2,17 +2,13 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" parallel="methods" name="MyTest(failed)">
-    <groups>
-      <run>
-        <include name="regression"/>
-      </run>
-    </groups>
     <classes>
       <class name="test.letcodeMainPageTest">
         <methods>
-          <include name="inputpage"/>
+          <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="buttonpage"/>
+          <include name="frames"/>
+          <include name="buttonspage"/>
         </methods>
       </class> <!-- test.letcodeMainPageTest -->
     </classes>

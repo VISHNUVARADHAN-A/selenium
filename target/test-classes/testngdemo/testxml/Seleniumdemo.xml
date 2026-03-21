@@ -9,6 +9,7 @@
                     <include name="inputspage"/>
                     <include name="selectpage"/>
                     <include name="alertPage"/>
+                    <include name="frames"></include>
                 </methods>
             </class> 
         </classes>
