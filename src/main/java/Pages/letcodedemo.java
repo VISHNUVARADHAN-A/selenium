@@ -21,7 +21,7 @@ public class letcodedemo {
 		
 		driver.get("https://letcode.in/test");
 		driver.manage().window().maximize();
-		Thread.sleep(3000);
+	
 	}
 	public void inputspage() {
 		driver.manage().window().maximize();
@@ -112,5 +112,31 @@ public class letcodedemo {
 		driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@src='innerframe']")));
 		driver.findElement(By.xpath("//input[@name='email']")).sendKeys("hello");
 		System.out.println(driver.findElement(By.xpath("//input[@name='email']")).getAttribute("value"));
+	}
+	public void radiobtn() throws InterruptedException {
+		driver.manage().window().maximize();
+		JavascriptExecutor JSE = (JavascriptExecutor)driver;
+		JSE.executeScript("window.scrollBy(0,500)");
+		driver.findElement(By.xpath("//a[text()=' Toggle ']")).click();
+		WebElement framespage = driver.findElement(By.xpath("//input[@id='yes']"));
+		new Actions(driver)
+		        .scrollToElement(framespage)
+		        .perform();
+		driver.findElement(By.xpath("//input[@id='yes']")).click();
+		driver.findElement(By.xpath("//input[@id='no']")).click();
+		driver.findElement(By.xpath("//input[@id='one']")).click();
+		System.out.println(driver.findElement(By.xpath("//input[@id='one']")).isSelected());
+		driver.findElement(By.xpath("//input[@id='two']")).click();
+		System.out.println(driver.findElement(By.xpath("//input[@id='one']")).isSelected());	
+		driver.findElement(By.xpath("//input[@id='bug']")).click();
+		System.out.println(driver.findElement(By.xpath("//input[@id='bug']")).isSelected());
+		driver.findElement(By.xpath("//input[@id='nobug']")).click();
+		System.out.println(driver.findElement(By.xpath("//input[@id='bug']")).isSelected());
+		System.out.println(driver.findElement(By.xpath("//input[@id='nobug']")).isSelected());
+		System.out.println(driver.findElement(By.xpath("//input[@id='maybe']")).isEnabled());
+		System.out.println(driver.findElement(By.xpath("//label[text()=' Remember me ']/input")).isSelected());
+		System.out.println(driver.findElement(By.xpath("//label[text()=' I agree to the ']/input")).isSelected());
+		driver.findElement(By.xpath("//label[text()=' I agree to the ']/input")).click();
+		System.out.println(driver.findElement(By.xpath("//label[text()=' I agree to the ']/input")).isSelected());
 	}
 	}

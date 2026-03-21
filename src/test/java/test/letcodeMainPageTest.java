@@ -38,4 +38,11 @@ public class letcodeMainPageTest extends Basepage {
 	        lc.landingpage();
 	    	lc.frames();
 	    }
+	    
+	    @Test
+	    void radiobtn() throws InterruptedException{
+	        letcodedemo lc = new letcodedemo(getDriver());
+	        lc.landingpage();
+	    	lc.radiobtn();
+	    }
 }

@@ -6,8 +6,8 @@
       <class name="test.letcodeMainPageTest">
         <methods>
           <include name="tearDown"/>
+          <include name="radiobtn"/>
           <include name="setUp"/>
-          <include name="frames"/>
         </methods>
       </class> <!-- test.letcodeMainPageTest -->
     </classes>
