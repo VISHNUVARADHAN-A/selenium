@@ -2,24 +2,24 @@
 <testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-06T00:09:27 IST" name="Default suite" finished-at="2026-04-06T00:09:40 IST" duration-ms="13303">
+  <suite started-at="2026-04-06T00:20:20 IST" name="Default suite" finished-at="2026-04-06T00:20:55 IST" duration-ms="35476">
     <groups>
     </groups>
-    <test started-at="2026-04-06T00:09:27 IST" name="Default test" finished-at="2026-04-06T00:09:40 IST" duration-ms="13303">
-      <class name="tests.SelectionTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.SelectionTest@51399530]" started-at="2026-04-06T00:09:27 IST" name="setUp" finished-at="2026-04-06T00:09:34 IST" duration-ms="7105" status="PASS">
+    <test started-at="2026-04-06T00:20:20 IST" name="Default test" finished-at="2026-04-06T00:20:55 IST" duration-ms="35476">
+      <class name="tests.ButtonsTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ButtonsTest@51399530]" started-at="2026-04-06T00:20:20 IST" name="setUp" finished-at="2026-04-06T00:20:49 IST" duration-ms="28911" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="selectBymulti()[pri:0, instance:tests.SelectionTest@51399530]" started-at="2026-04-06T00:09:34 IST" name="selectBymulti" finished-at="2026-04-06T00:09:39 IST" duration-ms="5425" status="PASS">
+        <test-method signature="verifyButtonProperties()[pri:0, instance:tests.ButtonsTest@51399530]" started-at="2026-04-06T00:20:49 IST" name="verifyButtonProperties" finished-at="2026-04-06T00:20:54 IST" duration-ms="5403" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- selectBymulti -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SelectionTest@51399530]" started-at="2026-04-06T00:09:39 IST" name="tearDown" finished-at="2026-04-06T00:09:40 IST" duration-ms="698" status="PASS">
+        </test-method> <!-- verifyButtonProperties -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ButtonsTest@51399530]" started-at="2026-04-06T00:20:54 IST" name="tearDown" finished-at="2026-04-06T00:20:55 IST" duration-ms="1087" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- tests.SelectionTest -->
+      </class> <!-- tests.ButtonsTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
