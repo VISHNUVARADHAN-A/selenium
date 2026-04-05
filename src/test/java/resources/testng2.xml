@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="LetCode Test Suite">
+
+    <test name="Functional Tests" parallel="classes" thread-count="5">
+
+        <classes>
+            <class name="tests.InputsTest"/>
+            <class name="tests.ButtonsTest"/>
+            <class name="tests.SelectionTest"/>
+        </classes>
+
+    </test>
+
+</suite>

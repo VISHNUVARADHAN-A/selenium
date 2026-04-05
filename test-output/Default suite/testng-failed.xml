@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.letcodeMainPageTest">
+      <class name="tests.SelectionTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="radiobtn"/>
           <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="selectBymulti"/>
         </methods>
-      </class> <!-- test.letcodeMainPageTest -->
+      </class> <!-- tests.SelectionTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
