@@ -1,25 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-06T00:20:20 IST" name="Default suite" finished-at="2026-04-06T00:20:55 IST" duration-ms="35476">
+  <suite started-at="2026-05-03T22:26:35 IST" name="Suite" finished-at="2026-05-03T22:26:55 IST" duration-ms="19348">
     <groups>
     </groups>
-    <test started-at="2026-04-06T00:20:20 IST" name="Default test" finished-at="2026-04-06T00:20:55 IST" duration-ms="35476">
-      <class name="tests.ButtonsTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ButtonsTest@51399530]" started-at="2026-04-06T00:20:20 IST" name="setUp" finished-at="2026-04-06T00:20:49 IST" duration-ms="28911" status="PASS">
+    <test started-at="2026-05-03T22:26:35 IST" name="Functional Tests" finished-at="2026-05-03T22:26:55 IST" duration-ms="19348">
+      <class name="tests.seleniumbasetest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.seleniumbasetest@ae13544]" started-at="2026-05-03T22:26:35 IST" name="setUp" finished-at="2026-05-03T22:26:39 IST" duration-ms="3906" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyButtonProperties()[pri:0, instance:tests.ButtonsTest@51399530]" started-at="2026-04-06T00:20:49 IST" name="verifyButtonProperties" finished-at="2026-04-06T00:20:54 IST" duration-ms="5403" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.seleniumbasetest@ae13544]" started-at="2026-05-03T22:26:35 IST" name="setUp" finished-at="2026-05-03T22:26:39 IST" duration-ms="3890" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyButtonProperties -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ButtonsTest@51399530]" started-at="2026-04-06T00:20:54 IST" name="tearDown" finished-at="2026-04-06T00:20:55 IST" duration-ms="1087" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.seleniumbasetest@ae13544]" started-at="2026-05-03T22:26:35 IST" name="setUp" finished-at="2026-05-03T22:26:39 IST" duration-ms="3961" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="actioninputs()[pri:0, instance:tests.seleniumbasetest@ae13544]" started-at="2026-05-03T22:26:39 IST" name="actioninputs" finished-at="2026-05-03T22:26:49 IST" duration-ms="9528" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- actioninputs -->
+        <test-method signature="textinputs()[pri:0, instance:tests.seleniumbasetest@ae13544]" started-at="2026-05-03T22:26:39 IST" name="textinputs" finished-at="2026-05-03T22:26:54 IST" duration-ms="14639" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- textinputs -->
+        <test-method signature="selectinputs()[pri:0, instance:tests.seleniumbasetest@ae13544]" started-at="2026-05-03T22:26:39 IST" name="selectinputs" finished-at="2026-05-03T22:26:47 IST" duration-ms="7807" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectinputs -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.seleniumbasetest@ae13544]" started-at="2026-05-03T22:26:47 IST" name="tearDown" finished-at="2026-05-03T22:26:50 IST" duration-ms="2359" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- tests.ButtonsTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.seleniumbasetest@ae13544]" started-at="2026-05-03T22:26:49 IST" name="tearDown" finished-at="2026-05-03T22:26:50 IST" duration-ms="844" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.seleniumbasetest@ae13544]" started-at="2026-05-03T22:26:54 IST" name="tearDown" finished-at="2026-05-03T22:26:55 IST" duration-ms="725" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.seleniumbasetest -->
+    </test> <!-- Functional Tests -->
+  </suite> <!-- Suite -->
 </testng-results>

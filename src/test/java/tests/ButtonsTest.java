@@ -8,9 +8,10 @@ import pages.ButtonsPage;
 
 public class ButtonsTest extends BaseTest {
 
+	
     @Test
     public void verifyButtonProperties() {
-
+    	
         ButtonsPage page = new ButtonsPage(driver);
 
         // Open Buttons Page

@@ -3,13 +3,35 @@
 <suite name="Failed suite [LetCode Test Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" parallel="classes" name="Functional Tests(failed)">
     <classes>
+      <class name="tests.SelectionTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifydropdownbyvalue"/>
+        </methods>
+      </class> <!-- tests.SelectionTest -->
+      <class name="tests.FramesTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="framedemo"/>
+        </methods>
+      </class> <!-- tests.FramesTest -->
       <class name="tests.InputsTest">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="verifyClearFunctionality"/>
+          <include name="verifyInputFunctionality"/>
         </methods>
       </class> <!-- tests.InputsTest -->
+      <class name="tests.ButtonsTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyButtonProperties"/>
+          <include name="verifyButtonHoldAction"/>
+        </methods>
+      </class> <!-- tests.ButtonsTest -->
     </classes>
   </test> <!-- Functional Tests(failed) -->
 </suite> <!-- Failed suite [LetCode Test Suite] -->

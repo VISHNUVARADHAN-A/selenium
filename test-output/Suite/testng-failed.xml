@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" parallel="methods" name="MyTest(failed)">
+<suite parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="methods" name="Functional Tests(failed)">
     <classes>
-      <class name="test.letcodeMainPageTest">
+      <class name="tests.seleniumbasetest">
         <methods>
-          <include name="tearDown"/>
+          <include name="actioninputs"/>
           <include name="setUp"/>
-          <include name="frames"/>
-          <include name="buttonspage"/>
+          <include name="selectinputs"/>
+          <include name="textinputs"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- test.letcodeMainPageTest -->
+      </class> <!-- tests.seleniumbasetest -->
     </classes>
-  </test> <!-- MyTest(failed) -->
+  </test> <!-- Functional Tests(failed) -->
 </suite> <!-- Failed suite [Suite] -->
